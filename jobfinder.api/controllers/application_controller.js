@@ -89,13 +89,15 @@ const     getAllApplicationByAdmin= async (req, res) => {
   const id = req.params.id;
   console.log(req.params)
   try {
-    const job = await Jobs.findOne({ userId: id });
+    const job = await Jobs.find({ userId: id });
+    console.log(job)
     if(!job){
       return
     }
-    const allApplication = await JobsApplicationModel.find({ jobsId: job._id }) .populate('userId') 
+    const jobIds = job.map(job => job._id);
+    const allApplication = await JobsApplicationModel.find({ jobsId: { $in: jobIds }  }) .populate('userId') 
     .populate('jobsId')  
-    .sort({ createdAt: -1 });   
+    // .sort({ createdAt: -1 });   
 
     console.log(allApplication)
       res.json({
