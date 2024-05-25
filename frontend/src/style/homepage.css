@@ -1,0 +1,20 @@
+.sidebar {
+    width: 13%; /* Adjust sidebar width as needed */
+    background: linear-gradient(180deg, #d9d7d7, #d9d7d7); /* Gradient background */
+    color: #1e3b8c; /* White text color */
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    font-family: 'Montserrat', sans-serif;
+    position: -webkit-sticky; /* For Safari */
+    position: sticky;
+    /* height: 100vh; Ensures the sidebar height covers the full viewport height */
+    /* overflow-y: auto; Allows scrolling within the sidebar if content overflows */
+    margin-left: 5%;
+    margin-top: 20px;
+}
+
+
+
+.sidebar h2 {
+    font-size: 1.
+}

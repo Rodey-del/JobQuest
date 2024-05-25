@@ -1,0 +1,103 @@
+secondnavigation.css
+
+
+.logo {
+  width: 150px;
+  height: 80px;
+  margin-right: 20%;
+  align-items: left;
+  padding-right: 20px;
+}
+
+.search-section {
+  flex: 1;
+}
+
+.search-div {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 8px;
+}
+
+.search-div i {
+  margin-right: 8px;
+}
+
+.search-div input {
+  flex: 1;
+  border: none;
+  outline: none;
+}
+
+.right-section {
+    display: flex;
+    align-items: center;
+    
+  }
+
+
+.signup-button,
+.post-job-button {
+  border: 2px solid green;
+  /* White border */
+  color: green;
+  /* White text */
+  background-color: white;
+  /* Green background */
+  padding: 10px 20px;
+  /* Adjust padding as needed */
+  border-radius: 15px;
+  /* Rounded border */
+  font-family: 'Montserrat', sans-serif;
+  /* Ensure the font matches the rest of the navbar */
+  font-style: inherit;
+  cursor: pointer;
+  /* Pointer cursor on hover */
+  transition: background-color 0.3s, color 0.3s;
+  /* Smooth transition for hover effects */
+  margin: 0 10px;
+  /* Add margin to create spacing between buttons */
+}
+
+.signup-button:hover,
+.post-job-button:hover {
+  background-color: green;
+  /* White background on hover */
+  color: white;
+  /* Green text on hover */
+}
+
+
+.notification-dropdown {
+  max-height: 20rem;
+  overflow-y: auto;
+  top: 8rem;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 800px) {
+  .secondary-navbar1 {
+    width: 90%;
+  }
+
+
+ 
+
+ 
+}
+
+@media (max-width: 500px) {
+  .search-section {
+    display: none;
+  }
+
+  .right-section {
+    flex-direction: row;
+  }
+
+
+
+}

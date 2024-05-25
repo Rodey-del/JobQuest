@@ -1,0 +1,203 @@
+/* Import Montserrat font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+/* Navbar styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    height: 70px;
+    background: linear-gradient(90deg, #1E3A8A, #3b82f6); /* Gradient background */
+    color: #ffffff; /* White text color */
+    font-family: 'Montserrat', sans-serif;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Left section styles */
+.left-section {
+    display: flex;
+    align-items: center;
+}
+
+/* Navigation styles */
+nav {
+    display: flex;
+    align-items: center;
+}
+
+.menubar {
+    display: flex;
+     padding-left: 30px; 
+}
+
+
+  
+.searchBar {
+    display: flex;
+    padding-top: 10px; /* Adjusted padding */
+    padding-left: 30px; /* Adjusted padding */
+    width: 15cm;
+    
+}
+
+/* Button styles */
+.signup-button,
+.post-job-button {
+    border: 2px solid #22C55E; /* Green border */
+    color: #ffffff; /* Green text */
+    background-color: #22C55E; /* White background */
+    padding: 3px 16px; /* Adjusted padding */
+    border-radius: 10px; /* Adjusted border radius */
+    font-family: 'Montserrat', sans-serif; /* Ensure the font matches the rest of the navbar */
+    font-style: inherit;
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effects */
+    margin: 0 10px; /* Add margin to create spacing between buttons */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Button shadow */
+}
+
+.signup-button:hover,
+.post-job-button:hover {
+    background-color: #fdfdfd; /* Green background on hover */
+    color: #22C55E; /* White text on hover */
+}
+
+/* Logo styles */
+.logo {
+    width: 120px; /* Reduced logo width */
+    height: 60px; /* Reduced logo height */
+    margin-right: 20px; /* Adjusted margin */
+}
+
+/* Search section styles */
+.search-section {
+    flex: 1;
+}
+
+.search-div {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff; /* White background */
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 8px;
+}
+
+.search-div i {
+    margin-right: 8px;
+}
+
+.search-div input {
+    flex: 1;
+    border: none;
+    outline: none;
+}
+
+/* Navigation link styles */
+nav a {
+    color: #ffffff; /* White text color */
+    text-decoration: none;
+    margin-right: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px; /* Reduced font size */
+    transition: color 0.3s, transform 0.3s; /* Smooth transition for color and transform */
+    font-weight: bold;
+    display: flex; /* Flex to align icon and text */
+    align-items: center;
+}
+
+nav a i {
+    margin-right: 8px; /* Space between icon and text */
+}
+
+nav a:hover {
+    color: #22C55E; /* Green text on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+nav .active {
+    color: #ffffff; /* White text for active link */
+}
+
+/* Right section styles */
+.right-section {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    justify-content: flex-end; /* Justify content to end */
+}
+
+/* Language selector styles */
+.language-selector {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+/* Notification dropdown styles */
+.notification-dropdown {
+    max-height: 20rem;
+    overflow-y: auto;
+    top: 8rem;
+}
+
+/* Media queries for responsiveness */
+@media (min-width: 700px) {
+    .left-section .hamburger {
+        display: none;
+    }
+}
+
+@media (max-width: 800px) {
+    .phone-number,
+    .phone-icon {
+        display: none;
+    }
+
+    .secondary-navbar1 {
+        width: 90%;
+    }
+}
+
+@media (max-width: 700px) {
+    .phone-icon,
+    .phone-number {
+        display: none;
+    }
+
+    .left-section nav a {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .navbar.nav-open nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 90px; /* Adjusted for new navbar height */
+        left: 0;
+        width: 100%;
+        height: max-content;
+        background-color: #F1F2F4;
+    }
+
+    .navbar.nav-open nav a {
+        display: block;
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 500px) {
+    .search-section {
+        display: none;
+    }
+
+    .right-section {
+        flex-direction: row;
+    }
+}
